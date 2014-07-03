@@ -1,0 +1,34 @@
+/*Código que verifica qual tipo de triângulo
+Linguagem: Java*/
+
+import java.util.Scanner;
+
+public class VerificaTriangulo{
+	public static void main(String[] args){
+		Scanner entrada = new Scanner(System.in);
+		
+		double ladoUm,ladoDois,ladoTres;
+		
+		System.out.println("Digite o lado 1:");
+		ladoUm = entrada.nextDouble();
+		
+		System.out.println("Digite o lado 2:");
+		ladoDois = entrada.nextDouble();
+		
+		System.out.println("Digite o lado 3:");
+		ladoTres = entrada.nextDouble();
+		
+		if(ladoUm != ladoDois && ladoDois != ladoTres && ladoUm !=ladoTres){
+			System.out.println("Esse triângulo é Escaleno");
+		}
+		else if(ladoUm == ladoDois && ladoDois == ladoTres){
+			System.out.println("Esse triângulo é Equilátero");
+		}
+		else if(ladoUm == ladoDois || ladoDois == ladoTres || ladoUm == ladoTres){
+			System.out.println("Esse triângulo é Isóceles");
+		}
+		else{
+			System.out.println("Não é triângulo");
+		}
+	}	
+}
