@@ -1,0 +1,23 @@
+/*Calculo o raio e o volume de uma esfera 
+ Linguagem: Java*/
+
+import java.util.Scanner;
+
+public class RaioEsfera {
+	static final double pi = 3.14159265;
+	public static void main(String[] args){
+		Scanner entrada = new Scanner(System.in);
+		
+		System.out.println("Digite o raio da esfera:");
+		double raio = entrada.nextDouble();
+		
+		double areaEsfera = 4*pi*(raio*raio); 
+		double volumeEsfera = (4*pi*(raio*raio*raio))/3;
+		
+		System.out.println("Area:" + areaEsfera);
+		System.out.println("Volume:" + volumeEsfera);
+		
+		
+	}
+
+}
