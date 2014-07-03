@@ -1,4 +1,5 @@
-/*Código mostra os números ímpares e pares até 40, o usuário tem a opção de escolher qual quer ver*/
+/*Código mostra os números ímpares e pares até 40, o usuário tem a opção de escolher qual quer ver
+Linguagem : Java */
 
 
 import java.util.Scanner;
