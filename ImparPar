@@ -1,0 +1,37 @@
+/*Código mostra os números ímpares e pares até 40, o usuário tem a opção de escolher qual quer ver*/
+
+
+import java.util.Scanner;
+
+public class ImparPar {
+	public static void main(String[] args){
+		int i = 0;
+		int opc;
+		Scanner entrada = new Scanner(System.in);
+		
+		System.out.println("1 - Para olhar numeros pares, 2 - Para ímpares");
+		opc = entrada.nextInt();
+		
+		switch(opc){
+			case 1:
+			for(i=0;i<=40;i++){
+				if(i % 2 == 0){
+					System.out.println("Numeros pares:" + i);
+				}
+			}
+					break;
+			
+			case 2:
+				for(i=0;i<40;i++){
+					if(!(i % 2 == 0)){
+						System.out.println("Numeros ímpares:" + i);
+					}
+				}
+					break;
+				
+		}
+		
+		
+	}
+
+}
